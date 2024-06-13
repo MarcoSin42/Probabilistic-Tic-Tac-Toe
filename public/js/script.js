@@ -24,7 +24,8 @@ function startGame() {
     origBoard = Array.from(Array(9).keys());
     // console.log(origBoard);
     for (var i = 0; i < cells.length; i++) {
-        cells[i].innerText = ''; //clear
+        cells[i].prob = new cellds();
+        cells[i].innerText = cells[i].prob.toString(); //clear
         cells[i].style.removeProperty('background-color');
         //add a event process vào click mouse event
         cells[i].addEventListener('click', turnClick, false);
@@ -47,7 +48,7 @@ function turnClick(square) {
 
 function turn(squareId, objectPlayer) {
     origBoard[squareId] = objectPlayer; //shows the player who has clicked the cell
-    document.getElementById(squareId).innerText = objectPlayer; //put more string in the cell with the ID just called
+    document.getElementById(squareId).innerText = "X"; //put more string in the cell with the ID just called
 
     let gameWon = checkWin(origBoard, objectPlayer) //check win
     if (gameWon) gameOver(gameWon)
