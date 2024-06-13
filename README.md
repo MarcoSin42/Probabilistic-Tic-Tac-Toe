@@ -24,7 +24,7 @@ Credits:
 Since I'm lazy and don't want to make Yet Another Tic-Tac-Toe game, I shamelessly forked the Tic-Tac-Toe interface from tanhongit.
 
 https://github.com/tanhongit/JavaScript-Tic-Tac-Toe-Project/tree/master?tab=readme-ov-file
-
+ 
 
 
 # Demo
